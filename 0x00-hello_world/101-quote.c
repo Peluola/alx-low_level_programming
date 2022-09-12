@@ -3,7 +3,7 @@
 /**
  * main - Inputs text
  *
- * RETURN: Always 1 (Successful)
+ * Return: Always 1 (Successful)
  */
 int main(void)
 {
