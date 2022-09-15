@@ -1,4 +1,4 @@
-nclude "main.h"
+include "main.h"
 
 /**
  *
@@ -7,7 +7,7 @@ nclude "main.h"
  *
  * Return: void
  *
- **/
+ */
 
 void times_table(void)
 
