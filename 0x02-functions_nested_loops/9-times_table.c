@@ -7,12 +7,10 @@ include "main.h"
  * Return: void
  *
  */
-
 void times_table(void)
-
 {
 
-		int x, y, z, u, d;
+		int 'x', 'y', 'z', 'u', 'd';
 		
 		for (x = 0; x <= 9; x++)
 		{
