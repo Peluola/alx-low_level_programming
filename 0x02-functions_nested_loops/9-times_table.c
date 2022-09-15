@@ -5,7 +5,6 @@ include "main.h"
  *
  *
  * Return: void
- *
  */
 void times_table(void)
 {
