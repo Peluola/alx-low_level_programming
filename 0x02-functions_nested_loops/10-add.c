@@ -1,4 +1,4 @@
-#include “main.h”
+#include "main.h"
 /**
  * add – Adds two integers.
  * @num1: The first integer to be added.
@@ -11,14 +11,10 @@
  *
  */
 
-Int add(int num1, int num2)
+int add(int num1, int num2)
 
 {
 
-
-
-	Return (num1 + num2);
-
-
+Return (num1 + num2);
 }
 
