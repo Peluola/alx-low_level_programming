@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- *
  * times_table - print the table from 0 to 9
  *
  *
  * Return: void
  */
+
 void times_table(void)
 {
 
@@ -27,7 +27,7 @@ void times_table(void)
 						_putchar(44);
 						_putchar(32);
 						_putchar(d + '0');
-						_putchar(u = '0');
+						_putchar(u + '0');
 					}
 					else
 					{
