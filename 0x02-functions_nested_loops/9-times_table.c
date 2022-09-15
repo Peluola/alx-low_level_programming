@@ -1,5 +1,4 @@
 include "main.h"
-
 /**
  *
  * times_table - print the table from 0 to 9
