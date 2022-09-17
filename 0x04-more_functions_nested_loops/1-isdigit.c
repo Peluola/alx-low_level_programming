@@ -1,5 +1,4 @@
-#ifndef MAIN_H
-
+ #ifndef MAIN_H
 /**
  * _isdigit - checks if input is digit between 0 - 9
  *
