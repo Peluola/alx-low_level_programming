@@ -1,6 +1,6 @@
 /**
  * swap_int - swaps two integer values
- * @: first integer
+ * @a: first integer
  * @b: second ineteger
  * Return: nothing
  */
