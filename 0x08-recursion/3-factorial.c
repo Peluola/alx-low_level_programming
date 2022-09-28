@@ -12,10 +12,11 @@ int factorial(int n)
 	int next_factorial;
 
 	if ( n < 0)
-		Return (-1);
+		return (-1);
 	else if 
 		(n == 0)
-			Return (1);
+			return (1);
 	next_factorial = factorial (n-1);
-	return ( n * next factorial);
+	return ( n * next_factorial);
+
 }
