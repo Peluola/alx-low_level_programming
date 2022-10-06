@@ -1,67 +1,51 @@
-#include "main.h"
-
-int find_strlen(char *s);
-int check_palindrome(char *s, int len, int index);
-int is_palindrome(char *s);
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * find_strlen - Returns the length of a string.
- * @s: The string to be measured.
- *
- * Return: The length of the string.
+ * main - prints the min number of coins to make change
+ * for an amount of money
+ * @argc: argument count
+ * @argv: arguments
+ * Return: 0
  */
-int find_strlen(char *s)
+int main(int argc, char **argv)
 {
-	int len = 0;
+	int total, count;
+	unsigned int i;
+	char *p;
+	int cents[] = {25, 10, 5, 2};
 
-	if (*(s + len))
+	if (argc != 2)
 	{
-		
-		len++;
-		len += find_strlen(s + len);
+		printf("Error\n");
+		return (1);
 	}
 
-	return (len);
-}
+	total = strtol(argv[1], &p, 10);
+	count = 0;
 
-/**
- * check_palindrome - Checks if a string is a palindrome.
- * @s: The string to be checked.
- * @len: The length of s.
- * @index: The index of the string to be checked.
- *
- * Return: If the string is a palindrome - 1.
- * 	If the string is not a palindrome - 0.
- */
-
-int check_palindrome(char *s, int len, int index)
-{
-	if (s[index] == s[len / 2])
+	if (!*p)
+	{
+		while (total > 1)
+		{
+			for (i = 0; i < sizeof(cents[i]); i++)
+			{
+				if (total >= cents[i])
+				{
+					count += total / cents[i];
+					total = total % cents[i];
+				}
+			}
+		}
+		if (total == 1)
+			count++;
+	}
+	else
+	{
+		printf("Error\n");
 		return (1);
+	}
 
-	if (s[index] == s[len - index - 1])
-		return (check_palindrome(s, len, index + 1));
-
+	printf("%d\n", count);
 	return (0);
-
 }
-
-/**
- * is_palindrome - Checks if a string is a palindrome.
- * @s: The string to be checked.
- * 
- * Return: If the string is a palindrome - 1.
- *	If the string is not a palindrome - 0.
- */
-
-int is_palindrome(char *s)
-{
-	int index = 0;
-	int len = find_strlen(s);
-
-	if (!(*s))
-		return (1);
-
-	return (check_palindrome(s, len, index));
-}
-
