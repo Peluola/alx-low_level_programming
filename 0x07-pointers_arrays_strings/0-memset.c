@@ -7,7 +7,7 @@
  * Return: pointer to the memory block
  */
 
-void *_memset(char *s, char b, unsigned int n);
+void *_memset(char *s, char b, unsigned int n)
 {
 	while (n)
 	{
