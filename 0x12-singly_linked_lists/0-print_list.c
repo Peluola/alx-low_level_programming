@@ -50,4 +50,3 @@ cursor = cursor->next;
 
 return (count);
 
-}
