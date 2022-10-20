@@ -6,6 +6,10 @@
 
 #include <stdlib.h>
 
+#include <stdio.h>
+
+#include <string.h>
+
 
 
 /**
@@ -22,19 +26,17 @@
 
  * Description: singly linked list node structure
 
- *              for project
-
  */
 
 typedef struct list_s
 
 {
 
-	char *str;
+char *str;
 
-	unsigned int len;
+unsigned int len;
 
-	struct list_s *next;
+struct list_s *next;
 
 } list_t;
 
@@ -52,4 +54,8 @@ void free_list(list_t *head);
 
 
 
-#endif /* LISTS_H */
+
+
+
+
+#endif
